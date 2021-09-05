@@ -1,6 +1,7 @@
 import './App.css';
 import Row from './Row';
 import requests from './requests'
+import Banner from './Banner';
 
 function App() {
 
@@ -8,7 +9,9 @@ function App() {
   return (
     
     <div className="app">
-        <h1>Netflix Clone</h1>
+        {/* Nav */}
+        {/* Banner */}
+        <Bannerner />
         <Row title="NETFLIX ORIGINALS" isLargeRow fetchUrl={requests.fetchNetflixOriginals} />
         <Row title="Trending Now" fetchUrl={requests.fetchTrending} />
         <Row title="Top Rated" fetchUrl={requests.fetchTopRated} />
